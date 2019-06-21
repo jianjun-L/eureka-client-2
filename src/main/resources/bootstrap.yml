@@ -1,0 +1,15 @@
+server:
+  port: 8806
+spring:
+  application:
+    name: eureka-client-2
+  cloud:
+    config:
+      uri: http://127.0.0.1:8804
+      discovery:
+        service-id: EUREKA-CONFIG
+        enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://172.16.207.252:8801/eureka/
