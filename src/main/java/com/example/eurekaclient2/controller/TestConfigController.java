@@ -16,7 +16,7 @@ public class TestConfigController {
     @GetMapping("/getNetMsg")
     public String getNetMsg(){
         log.info("dir={}",this.dir);
-        return null;
+        return dir;
     }
 
 }
